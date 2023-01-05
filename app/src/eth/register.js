@@ -39,7 +39,11 @@ export async function registerName(registry, provider, name) {
   const from = await signer.getAddress();
   const balance = await provider.getBalance(from);
   
-  const canSendTx = balance.gt(1e15);
-  if (canSendTx) return sendTx(registry.connect(signer), name);
-  else return sendMetaTx(registry, provider, signer, name);
+  // const canSendTx = balance.gt(1e15);
+  // if (canSendTx) return sendTx(registry.connect(signer), name);
+  // else return sendMetaTx(registry, provider, signer, name);
+
+  const canSendTx = 0;
+  if (canSendTx == 0) return sendMetaTx(registry, provider, signer, name);
+  
 }
