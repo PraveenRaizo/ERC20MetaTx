@@ -13,7 +13,7 @@ async function main() {
   }
   const provider = new DefenderRelayProvider(credentials)
   const relaySigner = new DefenderRelaySigner(credentials, provider, {
-    speed: 'fast',
+    speed: 'fast',  
   })
 
   const Forwarder = await ethers.getContractFactory('@openzeppelin/contracts/metatx/MinimalForwarder.sol:MinimalForwarder')

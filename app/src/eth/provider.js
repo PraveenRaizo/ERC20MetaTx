@@ -8,5 +8,5 @@ const UNSECURE_ENDPOINT = 'http://goerli.blockscout.com';
 const QUICKNODE_ENDPOINT = process.env.REACT_APP_QUICKNODE_URL;
 
 export function createProvider() {  
-  return new ethers.providers.JsonRpcProvider(QUICKNODE_ENDPOINT || MAIN_ENDPOINT, 5);
+  return new ethers.providers.JsonRpcProvider(QUICKNODE_ENDPOINT || MAIN_ENDPOINT, 80001);
 }
