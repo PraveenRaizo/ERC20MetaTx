@@ -1,3 +1,14 @@
+#praveen-agiratech's notes. 
+
+(For the openzeppelin notes check after praveen's notes ends.)
+
+Step by Step guide:
+   1. Visit Openzeppelin Defender website and signup. (https://defender.openzeppelin.com/)
+   2. First create a relayer with goerli chain (if you want to use a different chain you need to edit the code in this repo accordingly).
+       to know more about relayer: https://docs.openzeppelin.com/defender/relay
+   3. copy the public address of the relayer you created and use it to supply some goerliETH to the relayer.
+=========================================================================================================================================================
+
 # Relaying Meta-Transactions Using Defender Client API
 
 Demo code for relaying meta-transactions using [OpenZeppelin Defender](https://openzeppelin.com/defender) using the [client API](https://docs.openzeppelin.com/defender/relay-api-reference).
